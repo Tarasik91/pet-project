@@ -1,5 +1,8 @@
 pipeline {
-    agent { docker { image 'maven:3.8.4-openjdk-11-slim' } }
+
+    agent {
+        docker { image 'maven:3.8.1-adoptopenjdk-11' }
+    }
     stages {
         stage('build') {
             steps {

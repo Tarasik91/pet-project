@@ -52,7 +52,7 @@ public class UserRepositoryTest {
         UserRepository sampleRepositoryFromContext = applicationContext.getBean("userRepository", UserRepository.class);
         List<User> sampleEntityListFromContext = sampleRepositoryFromContext.findAll(Pageable.unpaged()).getContent();
         Assertions.assertFalse(sampleEntityListFromContext.isEmpty());
-        Assertions.assertEquals("firstname", sampleEntityListFromContext.get(0).getFirstName());
+        Assertions.assertEquals("firstnam1e", sampleEntityListFromContext.get(0).getFirstName());
         Assertions.assertEquals("lastname", sampleEntityListFromContext.get(0).getLastName());
         Assertions.assertEquals("username", sampleEntityListFromContext.get(0).getUsername());
     }

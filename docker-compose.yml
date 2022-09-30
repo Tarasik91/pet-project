@@ -1,5 +1,16 @@
 version: '3'
 services:
+  my-mysql-container:
+    image: mysql
+    container_name: my-mysql-container
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+
   api:
     container_name: api
     image: pet-project-img
@@ -9,3 +20,6 @@ services:
     ports:
       - 8090:8090
     restart: always
+
+volumes:
+  container-volume:

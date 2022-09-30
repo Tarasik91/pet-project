@@ -3,10 +3,10 @@ package com.example.petproject;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class PetProjectApplicationTests {
 
-    @Test
+  //  @Test
     void contextLoads() {
     }
 

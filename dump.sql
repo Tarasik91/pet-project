@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
     PRIMARY KEY  (`id`)
     );
 
-INSERT INTO tbl_users (id, first_name, last_name, username) VALUES(1,'First', 'Last', 'user1');
+INSERT INTO tbl_users (id, first_name, last_name, username) VALUES(1, 'First', 'Last', 'user1');
